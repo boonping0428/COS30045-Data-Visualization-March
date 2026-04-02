@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australian Appliance Energy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav id="top-nav">
+        <img src="images/PowerIcon.png" alt="Power Logo" id="logo" onclick="switchPage('home')">
+        
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item active" onclick="switchPage('home')">Home</a></li>
+            <li><a href="#" class="nav-item" onclick="switchPage('televisions')">Televisions</a></li>
+            <li><a href="#" class="nav-item" onclick="switchPage('about')">About Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="page-content active-page">
+            <h1>Home: Energy in Australia</h1>
+            <p>Welcome. In the Australian market, household appliances account for approximately 30% of total home energy consumption. Understanding the energy star ratings can significantly reduce your carbon footprint and electricity bills.</p>
+        </section>
+
+        <section id="televisions" class="page-content">
+            <h1>Televisions & Energy Use</h1>
+            <p>Televisions are a staple in Australian homes. Modern LED and OLED TVs are much more efficient than older plasma models, but standby power consumption remains a hidden drain on household energy grids. Look for the energy rating label when purchasing.</p>
+        </section>
+
+        <section id="about" class="page-content">
+            <h1>About Us</h1>
+            <p>We are dedicated to educating Australian consumers on smart appliance choices. Our goal is to promote sustainability and energy efficiency across all households.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name.</p>
+        <p>GenAI Acknowledgement: Portions of this code and placeholder text were drafted with the assistance of Google Gemini.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

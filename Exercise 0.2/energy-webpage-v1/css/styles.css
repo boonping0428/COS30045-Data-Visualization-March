@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Adjust these variables to match your Power Logo colors */
+:root {
+    --primary-color: #0056b3; /* Example Blue */
+    --secondary-color: #fca311; /* Example Orange/Yellow */
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logo {
+    height: 50px;
+    cursor: pointer;
+    margin-right: auto; /* Pushes the nav links to the right */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Mouse over feedback */
+.nav-links a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* Feedback for the current page */
+.nav-links a.active {
+    background-color: var(--secondary-color);
+    border-bottom: 3px solid white;
+}
+
+/* Page Content Hiding/Showing */
+main {
+    flex: 1; /* Pushes footer to the bottom */
+    padding: 40px;
+}
+
+.page-content {
+    display: none; /* Hide all pages by default */
+}
+
+.page-content.active-page {
+    display: block; /* Only show the active page */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
