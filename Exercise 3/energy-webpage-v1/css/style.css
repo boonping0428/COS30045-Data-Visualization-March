@@ -1,0 +1,276 @@
+/* CSS Reset to remove default margins, paddings, and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Color Palette Variables */
+:root {
+    --primary-color: #f9e2be;    
+    --hover-color: #f6b54b;      
+    --text-color: #333;       
+    --background: #f4f4f4;       
+}
+
+/* Body Styles */
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* Top Navigation Menu Styles */
+nav {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#logo {
+    height: 60px;
+}
+
+.logo-title {
+    margin-left: 15px;
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.power-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: var(--hover-color);
+    color: white;
+}
+
+.nav-btn.active {
+    background-color: var(--hover-color);
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+/* Page Content Styles */
+main {
+    flex: 1; 
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page-section {
+    display: none; 
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.page-section.active-page {
+    display: block; 
+}
+
+.page-section h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.page-section p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info-card, .about-details {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-top: 20px;
+    border-left: 4px solid var(--hover-color); /*Yellow lining on the left*/
+}
+
+.info-card h3 {
+    margin-bottom: 18px;
+}
+
+.info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px 20px; /* eliminate extra space from card padding */
+}
+
+.info-point-card {
+    flex: 1 1 30%;
+    min-width: 220px;
+    margin: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: auto;
+    height: 200px;
+    width: auto;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.info-point-card h4 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #222;
+}
+
+.info-point-card p {
+    line-height: 1.4;
+    color: #444;
+}
+
+/* CSV Data Table Styling */
+.data-container {
+    margin-top: 30px;
+    border-top: 2px solid var(--background);
+    padding-top: 20px;
+}
+
+.data-container h3 {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Scrollable container for the table */
+#tv-data {
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.data-table th {
+    background-color: var(--primary-color);
+    color: #333;
+    position: sticky;
+    top: 0; /* Keeps headers visible when scrolling */
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Storyboard Styles */
+.storyboard-section {
+    margin-bottom: 50px;
+}
+
+.storyboard-section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.storyboard-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.arrow-btn {
+    background: var(--primary-color);
+    border: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    margin: 0 20px;
+}
+
+.arrow-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.storyboard-visual {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 30px;
+}
+
+#storyboard-image, #storyboard-image2 {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.storyboard-explanation {
+    flex: 1;
+    margin-top: 0;
+    text-align: left;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.storyboard-explanation p {
+    line-height: 1.6;
+    color: #333;
+}

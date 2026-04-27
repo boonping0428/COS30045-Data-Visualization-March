@@ -83,9 +83,8 @@ This project follows ethical data visualisation practices by:
 
 Artificial Intelligence (AI) tools may have been used to assist with aspects of this assignment, such as:
 
-- Generating example code
-- Improving code structure
-- Assisting with documentation writing
+- GitHub Copilot was used to generate example code structure and design   the page layout
+- Gemini was used to generate example image of storyboard by follow the content i provided
 
 All AI-generated assistance was reviewed, modified where necessary, and integrated responsibly into the project.
 
