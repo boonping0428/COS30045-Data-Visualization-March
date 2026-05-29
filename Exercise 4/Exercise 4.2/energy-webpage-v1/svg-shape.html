@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Shape</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav id="top-nav">
+        <div class="power-icon" onclick="location.href='index.html'">
+            <img src="images/PowerIcon.png" alt="Power Logo" id="logo">
+            <h1 class="logo-title">Australian Appliance Energy</h1>
+        </div>
+        <ul id="nav-links">
+            <li><button class="nav-btn" onclick="location.href='index.html'">Home</button></li>
+            <li><button class="nav-btn" onclick="location.href='index.html#televisions'">Televisions</button></li>
+            <li><button class="nav-btn" onclick="location.href='index.html#about'">About Us</button></li>
+            <li><button class="nav-btn" onclick="location.href='index.html#storyboard'">Storyboards</button></li>
+            <li><button class="nav-btn active" onclick="location.href='svg-shape.html'">SVG Shape</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="page-section active-page">
+            <h2>SVG Shapes: House and Garden</h2>
+            <div class="svg-house-garden">
+                <svg width="600" height="360" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration of a house and garden using SVG shapes">
+                    <rect x="0" y="0" width="600" height="360" fill="#c9e4ff" />
+                    <rect x="0" y="260" width="600" height="100" fill="#a7d379" />
+
+                    <circle cx="520" cy="60" r="40" fill="#ffd166" />
+                    <polygon points="180,140 280,70 380,140" fill="#7b3f00" />
+                    <rect x="210" y="140" width="140" height="120" fill="#f5d1a9" stroke="#8b5e3c" stroke-width="4" />
+                    <rect x="245" y="190" width="40" height="70" fill="#5b3a29" />
+                    <rect x="325" y="180" width="40" height="40" fill="#8cc6ff" stroke="#3a5f7b" stroke-width="3" />
+                    <rect x="245" y="180" width="40" height="40" fill="#8cc6ff" stroke="#3a5f7b" stroke-width="3" />
+
+                    <ellipse cx="110" cy="280" rx="70" ry="30" fill="#2f8f33" />
+                    <ellipse cx="425" cy="290" rx="45" ry="20" fill="#2f8f33" />
+                    <ellipse cx="475" cy="305" rx="35" ry="15" fill="#2f8f33" />
+
+                    <line x1="0" y1="260" x2="600" y2="260" stroke="#4f772d" stroke-width="4" />
+                    <line x1="80" y1="310" x2="120" y2="260" stroke="#4f772d" stroke-width="6" />
+                    <line x1="120" y1="310" x2="160" y2="260" stroke="#4f772d" stroke-width="6" />
+                    <line x1="160" y1="310" x2="200" y2="260" stroke="#4f772d" stroke-width="6" />
+
+                    <polyline points="20,260 80,220 140,260 200,230 260,260" fill="none" stroke="#4a7d2a" stroke-width="6" />
+                    <polyline points="430,260 460,220 490,260 520,225 550,260" fill="none" stroke="#4a7d2a" stroke-width="6" />
+
+                    <path d="M 480 170 c 0 -40 30 -60 30 -60 s 20 20 20 60 c0 30 -20 50 -30 50 s-20 -20 -20 -50" fill="#5b3a29" />
+                    <path d="M 488 170 c 0 -30 20 -45 20 -45 s 15 15 15 45 c0 25 -15 40 -20 40 s-15 -15 -15 -40" fill="#1a6f1a" />
+                    <path d="M 488 150 c 0 -15 10 -25 10 -25 s 8 8 8 25 c0 15 -8 20 -10 20 s-8 -8 -8 -20" fill="#367c25" />
+
+                    <text x="300" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#3a3a3a">House and Garden with SVG Shapes</text>
+                    <text x="300" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#3a3a3a">rect, circle, ellipse, line, polyline, polygon, path, text</text>
+                </svg>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ng Boon Ping. Gen AI Acknowledgment.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

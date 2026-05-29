@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercise 4.2 - SVG House and Garden</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main>
+    <h1>SVG House and Garden</h1>
+    <p>
+      This page uses all major SVG shapes and demonstrates grouping, translations, and styling.
+      The two windows are grouped so they share the same style and can be moved together.
+    </p>
+
+    <section class="svg-section">
+      <svg id="house-scene" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" aria-labelledby="scene-title">
+        <title id="scene-title">SVG illustration of a house and garden</title>
+
+        <defs>
+          <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#8adce5" />
+            <stop offset="100%" stop-color="#c6f0f8" />
+          </linearGradient>
+          <linearGradient id="doorGlow" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#f4d5a7" />
+            <stop offset="100%" stop-color="#d18f4c" />
+          </linearGradient>
+          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity="0.18" />
+          </filter>
+        </defs>
+
+        <rect x="0" y="0" width="640" height="480" fill="url(#skyGradient)" />
+        <rect x="0" y="340" width="640" height="140" fill="#91c96d" />
+
+        <circle cx="540" cy="80" r="50" fill="#ffd66b" />
+        <path d="M 525 45 Q 520 60 535 70" fill="none" stroke="#ffd66b" stroke-width="6" stroke-linecap="round" />
+        <path d="M 570 60 Q 560 80 580 85" fill="none" stroke="#ffd66b" stroke-width="6" stroke-linecap="round" />
+
+        <polygon points="220,220 340,120 460,220" fill="#d95548" stroke="#a63824" stroke-width="5" filter="url(#shadow)" />
+        <rect x="240" y="220" width="220" height="170" rx="18" ry="18" fill="#fce2a3" stroke="#b4782d" stroke-width="6" filter="url(#shadow)" />
+        <rect x="302" y="280" width="60" height="110" rx="12" ry="12" fill="url(#doorGlow)" stroke="#8a4e25" stroke-width="5" />
+
+        <g id="windows" fill="#8cd3ff" stroke="#1c4e8a" stroke-width="4" stroke-linejoin="round" transform="translate(260 260)">
+          <rect x="0" y="0" width="55" height="55" rx="10" ry="10" />
+          <rect x="100" y="0" width="55" height="55" rx="10" ry="10" />
+          <line x1="0" y1="27.5" x2="55" y2="27.5" stroke="#1c4e8a" stroke-width="3" />
+          <line x1="27.5" y1="0" x2="27.5" y2="55" stroke="#1c4e8a" stroke-width="3" />
+          <line x1="100" y1="27.5" x2="155" y2="27.5" stroke="#1c4e8a" stroke-width="3" />
+          <line x1="127.5" y1="0" x2="127.5" y2="55" stroke="#1c4e8a" stroke-width="3" />
+        </g>
+
+        <line x1="130" y1="320" x2="130" y2="240" stroke="#6a4d28" stroke-width="12" />
+        <polyline points="130,250 120,235 140,235 130,250" fill="#4c8a24" />
+        <ellipse cx="120" cy="230" rx="40" ry="25" fill="#4c8a24" />
+        <ellipse cx="160" cy="205" rx="52" ry="30" fill="#78b34d" />
+
+        <path d="M 265 390 Q 295 350 310 330 T 320 290" fill="none" stroke="#926739" stroke-width="18" stroke-linecap="round" />
+        <path d="M 220 390 Q 245 360 255 345 T 262 320" fill="none" stroke="#d9b08c" stroke-width="14" stroke-linecap="round" />
+        <path d="M 255 430 L 285 430 L 335 470 L 310 480 L 260 440 Z" fill="#d9b08c" />
+
+        <polyline points="40,340 80,320 120,340 160,320 200,340" fill="none" stroke="#7c5f33" stroke-width="8" stroke-linecap="round" />
+        <polyline points="42,350 42,400 76,400 76,350 118,350 118,400 152,400 152,350" fill="none" stroke="#7c5f33" stroke-width="8" />
+
+        <ellipse cx="500" cy="390" rx="50" ry="25" fill="#469c36" />
+        <ellipse cx="560" cy="370" rx="60" ry="32" fill="#5fb74a" />
+
+        <text x="240" y="90" class="title-text">My SVG House</text>
+        <text x="322" y="430" class="garden-text">garden path</text>
+      </svg>
+    </section>
+
+    <section class="notes">
+      <h2>Annotated shape examples</h2>
+      <p>Each image identifies a different SVG shape and how its coordinates correspond to the drawing.</p>
+      <div class="image-grid">
+        <figure>
+          <img src="images/annotated-shapes.svg" alt="Annotated SVG shapes example" />
+          <figcaption>Annotated SVG drawing with shape labels.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/dom-screenshot.svg" alt="SVG DOM screenshot representation" />
+          <figcaption>SVG screenshot and DOM tree representation.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="commit-notes">
+      <h2>Repository and AI notes</h2>
+      <ul>
+        <li>Created a new Exercise 4.2 webpage with SVG shapes.</li>
+        <li>Used an AI assistant to help generate the SVG illustration and annotations.</li>
+        <li>Added grouped windows using `<g>` and `transform`/`translate` for layout.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

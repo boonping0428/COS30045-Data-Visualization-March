@@ -9,6 +9,9 @@ The exercises in this folder guide you through the fundamental concepts needed t
 - **Exercise 4.1 – Draw SVGs**  
   Learn how to create SVG elements that are used to draw graphics on a webpage.
 
+- **Exercise 4.2 – SVG house and garden**  
+  Create an SVG scene with shapes, groups, transforms, and annotated screenshots.
+
 - **Exercise 4.3 – D3 setup**  
   Set up the D3 library in your webpage.
 

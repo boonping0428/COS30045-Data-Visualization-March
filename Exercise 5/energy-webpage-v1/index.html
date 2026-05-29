@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- HTML5 document declaration -->
+<html lang="en">
+<!-- Head section containing metadata, title, and external links -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australian Appliance Energy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Body section with the main content of the webpage -->
+<body>
+
+    <!-- Navigation bar with logo and menu links -->
+    <nav id="top-nav">
+        <div class="power-icon" onclick="switchPage('home')">
+            <img src="images/PowerIcon.png" alt="Power Logo" id="logo">
+            <h1 class="logo-title">Australian Appliance Energy</h1>
+        </div>
+        
+        <ul id="nav-links">
+            <li><button class="nav-btn active" onclick="switchPage('home')">Home</button></li>
+            <li><button class="nav-btn" onclick="switchPage('televisions')">Televisions</button></li>
+            <li><button class="nav-btn" onclick="switchPage('about')">About Us</button></li>
+            <li><button class="nav-btn" onclick="switchPage('storyboard')">Storyboards</button></li>
+            <li><button class="nav-btn" onclick="switchPage('svg-shape')">SVG Shape</button></li>
+            <li><button class="nav-btn" onclick="switchPage('d3-demo')">D3 Demo</button></li>
+            <li><button class="nav-btn" onclick="switchPage('d3-multichart')">D3 Multi-Chart</button></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area containing different page sections -->
+    <main>
+        <!-- Home page section with introduction and energy rating info -->
+        <section id="home" class="page-section active-page">
+            <h2>Appliance Energy Consumption in Australia</h2>
+            <p>Welcome to our energy awareness portal. In the Australian market, household appliances account for approximately 30% of total home energy consumption. Making informed choices by checking the Energy Rating Label can significantly reduce your carbon footprint and lower your quarterly electricity bills.</p>
+        
+            <div class="info-card">
+                <h3>Understanding the Energy Rating Label</h3>
+                <div class="info-cards">
+                    <div class="info-point-card">
+                        <h4>Look for the Stars</h4>
+                        <p>The more stars, the more efficient the product is compared to other models of the same size.</p>
+                    </div>
+                    <div class="info-point-card">
+                        <h4>Check the Number</h4>
+                        <p>The energy consumption box shows the kWh/year. This helps you calculate the actual cost to run the appliance.</p>
+                    </div>
+                    <div class="info-point-card">
+                        <h4>Size Matters</h4>
+                        <p>Always compare products of a similar capacity or size for an accurate efficiency rating.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Televisions section with data visualization -->
+        <section id="televisions" class="page-section">
+            <h2>Televisions & Energy Use</h2>
+            <p>Televisions are a staple in Australian homes. While modern LED and OLED TVs are much more efficient than older plasma models, they are also getting larger. A 65-inch TV will naturally use more power than a 40-inch model.</p>
+            
+            <div class="data-container">
+                <h3>Registered Televisions (Australian Market)</h3>
+                <div id="tv-data">
+                    <p>Loading TV data...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us section with information about the initiative -->
+        <section id="about" class="page-section">
+            <h2>About Us</h2>
+            <p>We are an initiative dedicated to educating Australian consumers on smart, energy-efficient appliance choices. Our goal is to promote sustainability and help households navigate the complex landscape of energy consumption.</p>
+        </section>
+
+        <!-- Storyboard-->
+        <section id="storyboard" class="page-section">            
+            <div class="storyboard-section">
+                <h2>Storyboard 1: Sarah's TV Shopping Journey</h2>
+                <div class="storyboard-container">
+                    <button class="arrow-btn left-arrow" id="prev-btn">&lt;</button>
+                    <div class="storyboard-visual">
+                        <img id="storyboard-image" src="images/Storyboard1- picture1.png" alt="Storyboard Image">
+                        <div class="storyboard-explanation" id="storyboard-explanation">
+                            <p>This is the explanation for storyboard 1.</p>
+                        </div>
+                    </div>
+                    <button class="arrow-btn right-arrow" id="next-btn">&gt;</button>
+                </div>
+            </div>
+            
+            <div class="storyboard-section">
+                <h2>Storyboard 2: Sarah's Energy-Efficient TV Choice</h2>
+                <div class="storyboard-container">
+                    <button class="arrow-btn left-arrow" id="prev-btn2">&lt;</button>
+                    <div class="storyboard-visual">
+                        <img id="storyboard-image2" src="images/Storyboard2- picture1.png" alt="Storyboard Image">
+                        <div class="storyboard-explanation" id="storyboard-explanation2">
+                            <p>This is the explanation for storyboard 2.</p>
+                        </div>
+                    </div>
+                    <button class="arrow-btn right-arrow" id="next-btn2">&gt;</button>
+                </div>
+            </div>
+
+        </div>
+            </div>
+        </section>
+
+        <!-- SVG Shapes -->
+        <section id="svg-shape" class="page-section">
+            <h2>SVG Shapes: House and Garden</h2>
+            <!-- SVG container centered for the illustration -->
+            <div class="svg-shape">
+                <svg width="600" height="360" viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration of a house and garden using SVG shapes">
+                    <!-- Sky background -->
+                    <rect x="0" y="0" width="600" height="360" fill="#c9e4ff" />
+
+                    <!-- Grass ground -->
+                    <rect x="0" y="260" width="600" height="100" fill="#a7d379" />
+
+                    <!-- Sun in the sky -->
+                    <circle cx="520" cy="60" r="40" fill="#ffd166" />
+                    
+                    <!-- Chimney on the roof -->
+                    <rect x="225" y="80" width="24" height="45" fill="#5c2e0a" stroke="#3e1f06" stroke-width="1.5" />
+                    <rect x="221" y="74" width="32" height="6" fill="#8b5e3c" />
+
+                    <!-- Roof shape -->
+                    <polygon points="180,140 280,70 380,140" fill="#7b3f00" />
+
+                    <!-- House body -->
+                    <rect x="210" y="140" width="140" height="120" fill="#f5d1a9" stroke="#8b5e3c" stroke-width="4" />
+                    
+                    <!-- Window group: shared styling applied to both windows -->
+                    <g class="house-windows" fill="#87ceeb" stroke="#3a5f7b" stroke-width="2">
+                        <g transform="translate(0, 0)">
+                            <rect x="220" y="165" width="40" height="40" rx="3" />
+                            <line x1="240" y1="165" x2="240" y2="205" stroke-width="1.5" />
+                            <line x1="220" y1="185" x2="260" y2="185" stroke-width="1.5" />
+                        </g>
+                        <g transform="translate(80, 0)">
+                            <rect x="220" y="165" width="40" height="40" rx="3" />
+                            <line x1="240" y1="165" x2="240" y2="205" stroke-width="1.5" />
+                            <line x1="220" y1="185" x2="260" y2="185" stroke-width="1.5" />
+                        </g>
+                    </g>
+                    
+                    <!-- Door -->
+                    <rect x="265" y="205" width="30" height="55" fill="#8b4513" stroke="#5c2e0a" stroke-width="2" />
+
+                    <!-- Door frame detail -->
+                    <rect x="267" y="207" width="26" height="51" fill="#a0522d" opacity="0.8" />
+
+                    <!-- Door handle -->
+                    <circle cx="288" cy="232" r="2.5" fill="#d4af37" stroke="#b8860b" stroke-width="1" />
+
+                    <!-- Section title text inside SVG -->
+                    <text x="300" y="350" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#3a3a3a">House and Garden with SVG Shapes</text>
+                </svg>
+            </div>
+
+            <!-- Evidence screenshot for DOM verification -->
+            <div class="evidence-section">
+                <h2>DOM Verification Screenshot</h2>
+                <img src="images\SVG and DOM.png" alt="DOM Inspector displaying SVG elements" style="max-width:100%" />
+            </div>
+
+            <!-- Coordinate mapping table for the SVG shapes -->
+            <div class="evidence-section coordinate-section">
+                <h2>SVG Coordinate System Annotations</h2>
+                <img src="images\SVG Coordinate System Annotations.png" alt="SVG Coordinate System Annotations" style="max-width:100%" />
+            </div>
+        </section>
+
+        <section id="d3-demo" class="page-section">
+            <h2>D3.js Responsive Canvas</h2>
+            <p>This workspace utilizes a responsive CSS wrapper coupled with an SVG viewBox coordinate map to auto-scale shapes fluidly across all devices.</p>
+            
+            <div class="responsive-svg-container">
+                <div class="info-card" id="d3-sandbox">
+                    <h3>D3 Injected Output Zone</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="d3-multichart" class="page-section">
+            <h2>D3 Multi-Chart Exercise</h2>
+            <p>This page contains four D3 chart types built from the TV energy dataset plus a spot-price time series. Each chart lives in its own JS file and resizes to the browser.</p>
+            <div class="chart-grid">
+                <article class="chart-card">
+                    <h3>Energy vs Star Rating</h3>
+                    <p class="chart-description">Scatter plot showing labelled energy consumption by energy rating stars for TV models.</p>
+                    <div id="scatter-viz" class="chart-container"></div>
+                </article>
+
+                <article class="chart-card">
+                    <h3>Energy by Screen Technology</h3>
+                    <p class="chart-description">Donut chart comparing total annual energy consumption across screen technology categories.</p>
+                    <div id="donut-viz" class="chart-container"></div>
+                </article>
+
+                <article class="chart-card">
+                    <h3>55-inch TV Energy by Technology</h3>
+                    <p class="chart-description">Bar chart showing average energy consumption of 55-inch TVs grouped by screen type.</p>
+                    <div id="bar55-viz" class="chart-container"></div>
+                </article>
+
+                <article class="chart-card">
+                    <h3>Spot Power Prices 1998–2024</h3>
+                    <p class="chart-description">Line chart showing average Australian spot power prices over time.</p>
+                    <div id="line-viz" class="chart-container"></div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer with copyright information -->
+    <footer>
+        <p>&copy; 2026 Ng Boon Ping. Gen AI Acknowledgment.</p>
+    </footer>
+
+    <!-- JavaScript file for interactive functionality -->
+    <script src="js/script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/d3_script.js"></script>
+    <script src="js/scatter_chart.js"></script>
+    <script src="js/donut_chart.js"></script>
+    <script src="js/bar55_chart.js"></script>
+    <script src="js/line_chart.js"></script>
+</body>
+</html>

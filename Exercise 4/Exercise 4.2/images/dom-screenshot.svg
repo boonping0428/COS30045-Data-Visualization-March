@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <style>
+    .panel { fill: #f2f7ff; stroke: #aac4e0; stroke-width: 3; }
+    .panel-title { font: 22px Arial, sans-serif; fill: #1e3f62; font-weight: 700; }
+    .node { font: 18px Arial, sans-serif; fill: #283a52; }
+    .node-child { font-size: 17px; }
+    .tree-box { fill: #ffffff; stroke: #9eb7d1; stroke-width: 2; rx: 14; }
+    .preview-body { fill: #ffffff; stroke: #9eb7d1; stroke-width: 2; rx: 16; }
+    .small-house { fill: none; stroke: #455a75; stroke-width: 5; }
+  </style>
+  <rect width="900" height="520" fill="#edf5ff" />
+  <rect x="24" y="24" width="420" height="472" class="panel" rx="24" />
+  <text x="42" y="58" class="panel-title">Browser Developer Tools</text>
+
+  <g transform="translate(56 88)">
+    <rect x="0" y="0" width="360" height="420" class="tree-box" />
+    <text x="18" y="36" class="node">&lt;html&gt;</text>
+    <text x="34" y="72" class="node node-child">&lt;body&gt;</text>
+    <text x="52" y="108" class="node node-child">&lt;main&gt;</text>
+    <text x="70" y="144" class="node node-child">&lt;section class="svg-section"&gt;</text>
+    <text x="88" y="180" class="node node-child">&lt;svg id="house-scene"&gt;</text>
+    <text x="106" y="216" class="node node-child">&lt;defs&gt;</text>
+    <text x="106" y="248" class="node node-child">&lt;rect&gt;</text>
+    <text x="106" y="280" class="node node-child">&lt;polygon&gt;</text>
+    <text x="106" y="312" class="node node-child">&lt;g id="windows"&gt;</text>
+    <text x="124" y="344" class="node node-child">&lt;rect&gt; (window 1)</text>
+    <text x="124" y="372" class="node node-child">&lt;rect&gt; (window 2)</text>
+  </g>
+
+  <rect x="474" y="24" width="402" height="472" class="preview-body" />
+  <text x="500" y="58" class="panel-title">SVG Screenshot</text>
+  <g transform="translate(520 90)">
+    <rect x="0" y="0" width="300" height="220" fill="#c6e2ff" stroke="#82b4dc" stroke-width="2" rx="16" />
+    <polygon points="20,110 100,50 180,110" fill="#d95548" stroke="#a63824" stroke-width="4" />
+    <rect x="30" y="110" width="140" height="100" rx="12" fill="#fce2a3" stroke="#b4782d" stroke-width="4" />
+    <g transform="translate(60 145)" fill="#8cd3ff" stroke="#1c4e8a" stroke-width="3">
+      <rect x="0" y="0" width="38" height="38" rx="8" ry="8" />
+      <rect x="80" y="0" width="38" height="38" rx="8" ry="8" />
+    </g>
+    <circle cx="250" cy="30" r="18" fill="#ffd66b" />
+    <path d="M 40 220 Q 80 190 110 170 T 170 130" fill="none" stroke="#926739" stroke-width="8" />
+    <ellipse cx="230" cy="200" rx="30" ry="16" fill="#469c36" />
+  </g>
+</svg>
